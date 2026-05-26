@@ -255,6 +255,19 @@
               <p><strong>registro:</strong> abierto</p>
               <p><strong>clasificación:</strong> meme de alto impacto</p>
             </div>
+
+            <div class="easter-input-wrap">
+              <label class="easter-label" for="easter-trigger">Clave de acceso memético</label>
+              <input
+                id="easter-trigger"
+                class="easter-input"
+                type="text"
+                autocomplete="off"
+                spellcheck="false"
+                placeholder="escribe la palabra secreta"
+              />
+              <p class="easter-hint">Pista: empieza por <strong>nin...</strong></p>
+            </div>
           </div>
 
           <div class="audio-card reveal reveal-delay">
@@ -282,6 +295,27 @@
           </div>
         </div>
       </section>
+
+      <div
+        class="screamer-overlay"
+        id="screamer-overlay"
+        aria-hidden="true"
+        role="dialog"
+        aria-label="Easter egg visual"
+      >
+        <div class="screamer-flash"></div>
+        <canvas id="fireworks-canvas"></canvas>
+        <div class="screamer-core">
+          <img
+            src="216f101d3b795149a4ef65cf2c86879a.webp"
+            alt="Easter egg de Ninjarex"
+            class="screamer-image"
+          />
+          <button type="button" class="screamer-close" id="screamer-close" aria-label="Cerrar easter egg">
+            ×
+          </button>
+        </div>
+      </div>
     </main>
 
     <footer class="site-footer">
