@@ -663,6 +663,18 @@ textarea {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  z-index: 90;
+  transition:
+    opacity 0.18s ease,
+    visibility 0.18s ease;
+}
+
+.screamer-overlay.is-active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
 .screamer-flash {
   position: absolute;
   inset: 0;
@@ -672,6 +684,8 @@ textarea {
 }
 
 .screamer-overlay.is-active .screamer-flash {
+  animation: screamer-flash 0.45s ease-out;
+}
   animation: screamer-flash 0.45s ease-out;
 }
 
