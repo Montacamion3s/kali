@@ -643,18 +643,6 @@ textarea {
 .audio-controls {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  gap: 0.9rem;
-  margin-top: 1.4rem;
-}
-
-#audio-status {
-  color: var(--accent);
-  font-weight: 700;
-}
-
-.screamer-overlay {
-  position: fixed;
 .screamer-overlay {
   position: fixed;
   inset: 0;
@@ -701,8 +689,8 @@ textarea {
 .screamer-core {
   position: relative;
   width: min(92vw, 520px);
-  transform: scale(0.5) rotate(-8deg);
   opacity: 0;
+  transform: scale(0.5) rotate(-8deg);
   z-index: 2;
 }
 
@@ -716,6 +704,7 @@ textarea {
   height: auto;
   border-radius: 24px;
   border: 3px solid rgba(255, 255, 255, 0.92);
+  background: #111;
   box-shadow:
     0 0 0 8px rgba(120, 232, 255, 0.14),
     0 0 60px rgba(255, 79, 216, 0.32),
@@ -738,6 +727,8 @@ textarea {
   box-shadow: 0 0 24px rgba(255, 79, 216, 0.34);
   z-index: 3;
 }
+
+.site-footer {
   padding: 1.3rem 0 2rem;
   border-top: 1px solid var(--line);
   background: rgba(3, 5, 10, 0.72);
