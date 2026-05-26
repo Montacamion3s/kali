@@ -686,7 +686,6 @@ textarea {
 .screamer-overlay.is-active .screamer-flash {
   animation: screamer-flash 0.45s ease-out;
 }
-  animation: screamer-flash 0.45s ease-out;
 }
 
 #fireworks-canvas {
